@@ -1,12 +1,15 @@
-def retrocontador(e):
-    print("{},".format(e), end="")
-    
-    if e > 0:
-        retrocontador(e-1)
-    
-
-retrocontador(10)
-
-def sumatorio(n):
-    
-    return n + sumatorio(n-1)
+class Perro():
+    def __init__(self, nombre, edad, peso):
+        self.nombre = nombre
+        self.edad = edad
+        self.peso = peso
+        
+    def ladrar(self):
+        if self.peso >= 8:
+            print("GUAU, GUAU")
+        else:
+            print("guau, guau")
+            
+    def __str__(self):
+        print "Soy el perro{}".format(self.nombre)
+        
